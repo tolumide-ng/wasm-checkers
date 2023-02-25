@@ -261,8 +261,6 @@
 
     ;; Manually place each piece on the board to initialuze the game
     (func $initBoard
-        ;; (call $notify_piecemoved (i32.const 0) (i32.const 5) (i32.const 0) (i32.const 4))
-
         ;; Place the white pieces at the top of the board
         (call $setPiece (i32.const 1) (i32.const 0) (global.get $WHITE))
         (call $setPiece (i32.const 3) (i32.const 0) (global.get $WHITE))

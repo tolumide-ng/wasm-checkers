@@ -25,6 +25,17 @@ Reference table when working with bit masked or "packed" values:
 
 
 
+### How to Run this project
+1. You can simply serve this application with python3 using the command below:
+```
+python3 -m http.server
+```
+2. Open the web console to view the updates
+
+#### NB:
+- In order to make changes to the `checkers.wat` file or to recompile it
+- Simply Clone the [wabt](https://github.com/WebAssembly/wabt), setup wabt(using the README.md file there), and copy this project into the root directory of wabt(Web Asssembly Toolkit)
+
 
 
 ### Based On:
