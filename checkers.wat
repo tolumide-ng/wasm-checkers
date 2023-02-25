@@ -127,9 +127,9 @@
 
     ;; Toggles the player, after the current player's turn
     (func $toggleTurnOwner
-        (if (i32.eq (call $getTurnOwner) (i32.const $BLACK))
-            (then (call $setTurnOwner (i32.const $WHITE)))
-            (else (call $setTurnOwner (i32.const $BLACK)))
+        (if (i32.eq (call $getTurnOwner) (global.get $BLACK))
+            (then (call $setTurnOwner (global.get $WHITE)))
+            (else (call $setTurnOwner (global.get $BLACK)))
         )
     )
 
